@@ -1,0 +1,7 @@
+<h1>Tasks for display</h1>
+
+<% @all.each do |task| %>
+  <ol>
+    <%= link_to task.title, show_path(task) %>
+  </ol>
+<%end%>
